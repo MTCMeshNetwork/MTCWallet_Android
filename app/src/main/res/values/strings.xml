@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MTCWallet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="action_generate">Generate</string>
+    <string name="title_activity_eth_wallet_gen_v2">EthWalletGenActivityV2</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_eth_wallet_new">Generate</string>
+    <string name="title_eth_wallet_from_private_key">Private Key</string>
+    <string name="title_eth_wallet_from_keystore">Import</string>
+    <string name="title_wallet_new">Wallet Create</string>
+    <string name="title_wallet_import">Wallet Import</string>
+</resources>

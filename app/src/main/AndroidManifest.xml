@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.mtc.app">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Used for Importing / Exporting Wallets -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="io.mtc.app.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.mtc.app.test.TestMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="io.mtc.app.services.EthWalletService"
+            android:exported="false" />
+
+        <activity
+            android:name="io.mtc.app.activity.EthWalletGenImportActivity"
+            android:label="@string/title_activity_eth_wallet_gen_v2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletGenGuideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletGenNewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthReceiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthSendActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthTransactionDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletGenSuccessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletExportPrivateKeyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="io.mtc.app.activity.EthWalletExportKeystoreActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="io.mtc.app.activity.EthTransactionListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="io.mtc.app.activity.EthTransactionResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

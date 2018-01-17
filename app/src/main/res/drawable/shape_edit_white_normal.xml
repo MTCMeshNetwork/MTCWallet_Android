@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--模拟背景的padding区域  和背景不突兀 看不出的颜色-->
+    <item>
+        <shape>
+            <!-- 实心 -->
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <!--模拟背景的padding的size 6dp-->
+    <item
+        android:bottom="6dp"
+        android:left="6dp"
+        android:right="6dp"
+        android:top="6dp">
+        <!--原来的需求区域-->
+        <shape>
+            <!-- 实心 -->
+            <solid android:color="@android:color/white"/>
+            <!-- 边框 -->
+            <stroke
+                android:width="1px"
+                android:color="@color/colorAccent" />
+            <!-- 圆角 -->
+            <corners android:radius="4dp"/>
+        </shape>
+
+    </item>
+</layer-list>
