@@ -15,6 +15,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.NoActionBar.Green">
+        <item name="android:colorPrimaryDark">@color/colorPrimaryGreen</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.HongBao">
+        <item name="android:colorPrimary">@color/colorHongBaoRed</item>
+        <item name="android:colorPrimaryDark">@color/colorHongBaoRed</item>
+    </style>
+
     <style name="AppTheme.FullScreen">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -34,5 +43,12 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MTCSeekBarStyle" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/mtc_seekbar</item>
+        <item name="android:thumb">@drawable/shape_seekbar_point</item>
+        <item name="android:minHeight">6dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
 
 </resources>

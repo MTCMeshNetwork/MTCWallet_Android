@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.EthWalletGenSuccessActivity">
+    tools:context=".mtcwallet.activity.EthWalletGenSuccessActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

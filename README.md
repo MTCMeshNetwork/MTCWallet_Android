@@ -1,1 +1,0 @@
-# MTCWallet_Android

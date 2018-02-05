@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.EthWalletGenSuccessActivity">
+    tools:context=".mtcwallet.activity.EthWalletGenSuccessActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -35,7 +35,7 @@
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ic_eth" />
+                    app:srcCompat="@drawable/ic_wallet_gen_success" />
 
                 <TextView
                     android:id="@+id/tv_toolbar_title"
@@ -132,12 +132,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="交易密码:"
+                    android:text="钱包密码:"
                     android:textColor="@android:color/white" />
 
                 <TextView
@@ -184,6 +185,16 @@
         android:text="备份/导出钱包"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:text="稍后再说" />
 
     <TextView
         android:layout_width="match_parent"

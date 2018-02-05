@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context="io.mtc.app.fragment.EthWalletFromKeystoreFragment">
+    tools:context=".mtcwallet.fragment.EthWalletFromKeystoreFragment">
 
 
     <LinearLayout
@@ -80,7 +80,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"
                 android:layout_marginTop="12dp"
-                android:text="交易密码"
+                android:text="钱包密码"
                 android:textColor="@android:color/white" />
 
             <EditText
@@ -91,7 +91,7 @@
                 android:layout_marginRight="8dp"
                 android:background="@drawable/selector_edit_gray"
                 android:ems="10"
-                android:hint="请输入交易密码"
+                android:hint="请输入钱包密码"
                 android:inputType="textPassword"
                 android:padding="12dp"
                 android:textColor="@android:color/white"
@@ -104,7 +104,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"
                 android:layout_marginTop="8dp"
-                android:text="重复交易密码"
+                android:text="重复钱包密码"
                 android:textColor="@android:color/white" />
 
             <EditText
@@ -115,7 +115,7 @@
                 android:layout_marginRight="8dp"
                 android:background="@drawable/selector_edit_gray"
                 android:ems="10"
-                android:hint="请重复输入交易密码"
+                android:hint="请重复输入钱包密码"
                 android:inputType="textPassword"
                 android:padding="12dp"
                 android:textColor="@android:color/white"

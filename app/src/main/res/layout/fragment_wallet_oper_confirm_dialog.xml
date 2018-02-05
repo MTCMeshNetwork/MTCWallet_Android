@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="32dp"
-    tools:context="io.mtc.app.dialog.WalletOperConfirmDialogFragment">
+    tools:context=".mtcwallet.dialog.WalletOperConfirmDialogFragment">
 
     <!-- TODO: Update blank fragment layout -->
 

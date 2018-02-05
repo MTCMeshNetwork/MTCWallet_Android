@@ -11,16 +11,23 @@
     <color name="colorPrimaryDark">#2E323E</color>
     <color name="colorAccent">#9cacbf</color>
 
-    <color name="colorWelcomeBackground">#333333</color>
+    <color name="colorWelcomeBackground">#2C2A2A</color>
     <color name="colorPrimaryPink">#BF2279</color>
     <color name="colorPrimaryRed">#E13861</color>
-    <color name="colorPrimaryOrange">#FF6600</color>
+    <color name="colorPrimaryOrange">#FF6000</color>
     <color name="colorPrimaryGreen">#26A45B</color>
     <color name="colorPrimaryBlue">#3E95F4</color>
-    <color name="colorPrimaryGray">#484950</color>
+    <color name="colorPrimaryGray">#475162</color>
 
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorBlue">#0000FF</color>
 
+    <color name="colorGray9">#999999</color>
     <color name="colorListItemBackground">#484950</color>
     <color name="colorSettingNavigationBackground">#E4E4E4</color>
+    <color name="colorWalletListViewBackground">#1F1F21</color>
+    <color name="colorPrimaryBlackRed">#C0383A</color>
+    <color name="colorHongBaoRed">#FA2848</color>
 
 </resources>

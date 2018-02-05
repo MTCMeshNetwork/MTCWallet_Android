@@ -41,7 +41,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
-                    android:text="ETH余额"
+                    android:text="交易记录"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
@@ -49,6 +49,50 @@
 
 
         </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/colorPrimaryOrange"
+                android:textSize="28sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_total_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="总资产 (CNY)"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_wallet_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/colorPrimaryGreen"
+            android:orientation="horizontal"></LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -63,6 +107,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -126,7 +171,8 @@
         android:clickable="true"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="24dp"

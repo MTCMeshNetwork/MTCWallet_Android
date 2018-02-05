@@ -6,26 +6,42 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.EthWalletGenGuideActivity">
+    tools:context=".mtcwallet.activity.EthWalletGenGuideActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:background="@color/colorPrimaryGreen"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey Buddy"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
-        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Come On!"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-    </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Create/Reback your fastest wallet"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +62,7 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                app:srcCompat="@drawable/ic_eth" />
+                app:srcCompat="@drawable/ic_wallet_new_white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -71,7 +87,7 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                app:srcCompat="@drawable/ic_eth" />
+                app:srcCompat="@drawable/ic_wallet_import_white" />
 
             <TextView
                 android:layout_width="match_parent"

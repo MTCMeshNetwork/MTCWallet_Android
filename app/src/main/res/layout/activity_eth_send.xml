@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.EthSendActivity">
+    tools:context=".activity.EthSendActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -130,18 +130,16 @@
                     android:ems="10"
                     android:hint="填入接收钱包地址"
                     android:inputType="textPersonName"
-                    android:text="0xd742670aAA164068e5C275999331C96417F58b68"
                     android:textColor="@android:color/white"
                     android:textColorHint="@color/colorAccent"
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:id="@+id/iv_scan_qrcode"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:layout_marginLeft="8dp"
-                    android:visibility="gone"
-                    app:srcCompat="@android:drawable/ic_btn_speak_now" />
+                    app:srcCompat="@drawable/ic_scan_qr" />
 
             </LinearLayout>
 
@@ -231,7 +229,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -320,11 +319,17 @@
 
                 <SeekBar
                     android:id="@+id/seekBar"
+                    style="@style/MTCSeekBarStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_seek_bar"
                     android:max="100"
-                    android:progress="10" />
+                    android:maxHeight="6dp"
+                    android:minHeight="6dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/mtc_seekbar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/shape_seekbar_point"
+                    android:thumbOffset="0dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -383,7 +388,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -401,7 +407,8 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingLeft="8dp"
-                android:paddingRight="8dp">
+                android:paddingRight="8dp"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/edit_data"
@@ -455,7 +462,7 @@
                 <TextView
                     android:layout_width="64dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryOrange"
                     android:gravity="center_vertical"
                     android:paddingLeft="8dp"
                     android:text="PW"
@@ -469,8 +476,8 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:ems="10"
-                    android:hint="交易密码"
-                    android:inputType="textPersonName"
+                    android:hint="钱包密码"
+                    android:inputType="textPassword"
                     android:padding="8dp"
                     android:textColor="@android:color/white"
                     android:textColorHint="@color/colorAccent"

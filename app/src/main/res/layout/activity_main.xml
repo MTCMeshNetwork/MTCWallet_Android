@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -50,8 +50,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="¥ 0.0"
-                    android:textColor="@android:color/white"
+                    android:text="0.0"
+                    android:textColor="@color/colorPrimaryOrange"
                     android:textSize="28sp" />
 
                 <TextView
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="center"
-                    android:text="总资产 (RMB)"
+                    android:text="总资产 (CNY)"
                     android:textColor="@android:color/white"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -74,7 +74,8 @@
                 android:layout_marginTop="6dp"
                 android:gravity="center"
                 android:textColor="@android:color/white"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:visibility="invisible" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -88,7 +89,8 @@
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
 
             <ListView
                 android:id="@+id/listView"

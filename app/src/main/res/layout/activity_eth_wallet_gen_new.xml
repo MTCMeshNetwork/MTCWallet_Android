@@ -11,13 +11,15 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/colorPrimaryGreen"
+        android:orientation="vertical"
+        android:paddingBottom="48dp">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorPrimaryGreen"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_scrollFlags="scroll|enterAlways">
@@ -26,8 +28,8 @@
                 android:id="@+id/tv_toolbar_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -91,7 +93,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:ems="10"
-            android:hint="输入不小于9位的交易密码"
+            android:hint="输入不小于8位的钱包密码"
             android:inputType="textPersonName"
             android:padding="8dp"
             android:textColor="@android:color/white"
@@ -176,7 +178,7 @@
     <TextView
         android:id="@+id/btn_generate"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="32dp"

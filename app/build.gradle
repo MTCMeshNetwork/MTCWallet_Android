@@ -7,8 +7,8 @@ android {
         applicationId 'io.mtc.app.mtcwallet'
         minSdkVersion 21
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName '1.0.3'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -44,10 +44,13 @@ dependencies {
     compile 'me.dm7.barcodescanner:zxing:1.8.4'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
     compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.1.4'
     compile 'com.android.support:multidex:1.0.1'
     compile 'org.web3j:core-android:2.2.1'
     compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'

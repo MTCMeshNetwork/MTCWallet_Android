@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context="io.mtc.app.activity.EthWalletGenSuccessActivity">
+    tools:context=".mtcwallet.activity.EthWalletGenSuccessActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -171,7 +171,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="强烈建议备份并妥善保管MTC秘钥和钱包交易密码，否则一旦丢失将无法找回！"
+        android:text="强烈建议备份并妥善保管MTC秘钥和钱包钱包密码，否则一旦丢失将无法找回！"
         android:textColor="@color/colorPrimaryOrange"
         android:textSize="12sp" />
 </LinearLayout>

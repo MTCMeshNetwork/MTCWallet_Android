@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/white"
     android:gravity="center_vertical"
     android:orientation="vertical">
 
@@ -22,10 +21,15 @@
             android:visibility="gone"
             app:srcCompat="@drawable/ic_action_remove" />
 
-        <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            app:srcCompat="@drawable/ic_wallet_card" />
+        <TextView
+            android:id="@+id/tv_focus"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_focus_point"
+            android:visibility="invisible" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -39,7 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:text="Wallet 01" />
+                android:text="Wallet 01"
+                android:textColor="@color/colorGray9" />
 
             <TextView
                 android:id="@+id/tv_total_price"
@@ -49,7 +54,8 @@
                 android:layout_weight="1"
                 android:gravity="right"
                 android:text="9999.99"
-                android:textColor="@color/colorPrimaryOrange" />
+                android:textColor="@color/colorPrimaryOrange"
+                android:visibility="gone" />
 
         </FrameLayout>
     </LinearLayout>
